@@ -28,6 +28,8 @@ const Header = () => {
           <Link to="/" className="hover:text-[#e63946] transition-colors duration-300">Home</Link>
           <Link to="/vehicles" className="hover:text-[#e63946] transition-colors duration-300">Vehicles</Link>
           <Link to="/about" className="hover:text-[#e63946] transition-colors duration-300">About Us</Link>
+          <Link to="/about" className="hover:text-[#e63946] transition-colors duration-300">Blogs</Link>
+          <Link to="/schedule" className="hover:text-[#e63946] transition-colors duration-300">Schedule</Link>
           <Link to="/dashboard" className="hover:text-[#e63946] transition-colors duration-300 flex items-center">
             <FaUserAlt className="mr-1" /> Admin
           </Link>
@@ -48,13 +50,14 @@ const Header = () => {
           <Link to="/" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Home</Link>
           <Link to="/vehicles" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Vehicles</Link>
           <Link to="/about" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">About Us</Link>
-          {/* <Link to="/contact" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Contact</Link> */}
+          <Link to="/blog" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Blogs</Link>
+          <Link to="/schedule" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Schedule</Link>
           <Link to="/dashboard" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300 flex items-center">
             <FaUserAlt className="mr-1" /> Admin
           </Link>
           {/* Mobile Login/Sign Up */}
-          <Link to="/login" onClick={toggleMenu} className="hover:text-[#e63946] text-[#e63946] transition-colors duration-300">Login</Link>
-          <Link to="/signup" onClick={toggleMenu} className="hover:text-[#e63946] text-[#e63946] transition-colors duration-300">Sign Up</Link>
+          <Link to="/login" onClick={toggleMenu} className="hover:text-[#e63946] text-[#fff] transition-colors duration-300">Login</Link>
+          <Link to="/signup" onClick={toggleMenu} className="hover:text-[#e63946] text-[#fff] transition-colors duration-300">Sign Up</Link>
         </nav>
       )}
     </header>

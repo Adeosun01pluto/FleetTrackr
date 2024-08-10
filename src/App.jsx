@@ -10,6 +10,9 @@ import Contact from './components/Contact'
 import Thecars from './components/Thecars'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Blog from './pages/Blog'
+import BlogPost from './components/BlogPost'
+import ScheduleAppointment from './pages/ScheduleAppointment '
 
 // #283618 dark green 
 // #606c38 green
@@ -28,9 +31,11 @@ function App() {
             {/* <Route element={<Contact/>} path='/contact' /> */}
             <Route element={<Thecars/>} path='/vehicles' />
             <Route element={<Dashboard/>} path='/dashboard' />
+            <Route path="/blog" element={<Blog />} /> {/* Add the Blog route */}
+            <Route path="/blog/:id" element={<BlogPost />} /> {/* Add the BlogPost route */}
+            <Route path="/schedule" element={<ScheduleAppointment />} />
             <Route element={<Login/>} path='/login' />
             <Route element={<Signup/>} path='/signup' />
-
           </Routes>
         </main>
         <Footer />

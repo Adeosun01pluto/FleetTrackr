@@ -12,7 +12,7 @@ function Thecars() {
             </div>
 
             {/*  */}
-            <div className='grid md:grid-cols-3 sm:grid-cols-2 px-3 gap-8 md:w-[100%] lg:w-[80%]'>
+            <div className='grid md:grid-cols-3 sm:grid-cols-2 w-full px-3 gap-8 md:w-[100%] lg:w-[80%]'>
                 <div className='w-full h-[350px] cursor-pointer flex flex-col justify-between group hover:bg-[#e63946] transition-all hover:text-white bg-black/10 p-4 rounded-md'>
                     <div className='h-1/2 bg-white rounded-md p-4'>
                         <img src="" alt="" />

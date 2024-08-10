@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import { Pagination, Navigation } from 'swiper/modules';
 import { SiToyota } from "react-icons/si";
 import heroimg from "../assets/heroimg.png"
-import  "./hero.css"
+import  "./Hero.css"
 
 const Hero = () => {
   return (

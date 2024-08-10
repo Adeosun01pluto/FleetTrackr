@@ -48,8 +48,8 @@ const Header = () => {
           <Link to="/" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Home</Link>
           <Link to="/vehicles" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Vehicles</Link>
           <Link to="/about" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">About Us</Link>
-          <Link to="/contact" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Contact</Link>
-          <Link to="/admin/dashboard" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300 flex items-center">
+          {/* <Link to="/contact" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300">Contact</Link> */}
+          <Link to="/dashboard" onClick={toggleMenu} className="hover:text-[#e63946] transition-colors duration-300 flex items-center">
             <FaUserAlt className="mr-1" /> Admin
           </Link>
           {/* Mobile Login/Sign Up */}

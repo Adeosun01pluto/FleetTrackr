@@ -43,7 +43,7 @@ const Header = () => {
         {/* Logo Section */}
         <Link to="/" className="text-black text-2xl md:text-3xl font-bold flex items-center">
           <FaCar className="mr-2" />
-          FleetTrackr
+          FleetFix
         </Link>
 
         {/* Navigation Menu */}

@@ -7,7 +7,7 @@ const About_ = () => {
         <h1 className="text-3xl text-[#e63946] md:text-4xl mb-6 sm:mb-12 font-bold text-center">About Us</h1>
         <div className="bg-white rounded-lg shadow-md p-8">
           <p className="text-sm sm:text-lg text-gray-700 mb-6">
-            At FleetTrackr, we've been at the forefront of vehicle management for over two decades. Our journey began with a simple mission: to revolutionize how businesses and individuals manage their vehicles.
+            At FleetFix, we've been at the forefront of vehicle management for over two decades. Our journey began with a simple mission: to revolutionize how businesses and individuals manage their vehicles.
           </p>
           <p className="text-sm sm:text-lg text-gray-700 mb-6">
             Today, we're proud to be a leading provider of comprehensive vehicle management solutions. Our team of experienced professionals is dedicated to delivering top-notch services that keep your fleet running smoothly and efficiently.

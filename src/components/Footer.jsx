@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black/90 text-white p-8">
       <Link to="/" className="pb-4 text-2xl md:text-3xl font-bold flex items-center">
           <FaCar className="mr-2" />
-          FleetTrackr
+          FleetFix
       </Link>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Subscribe Section */}
@@ -52,7 +52,7 @@ const Footer = () => {
 
         {/* Footer Bottom Text */}
         <div className="flex w-full justify-center">
-          <p>&copy; {new Date().getFullYear()} FleetTrackr. All Rights Reserved. Design by Free Html Templates. Distributed by ThemeWagon.</p>
+          <p>&copy; {new Date().getFullYear()} FleetFix. All Rights Reserved. Design by Free Html Templates. Distributed by ThemeWagon.</p>
         </div>
       </div>
     </footer>

@@ -1,28 +1,50 @@
 import React, { useState } from 'react';
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { auth } from '../../firebase/firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+  const signInWithEmail = async (e) => {
+    e.preventDefault(); // Fixed the typo
+    setErrorMessage(''); // Reset error message
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+  
+      // Optionally, you can check if the user exists in Firestore and handle accordingly
+  
+      console.log('User signed in:', email);
+      navigate("/")
+    } catch (error) {
+      console.error('Error signing in:', error.message);
+      setErrorMessage(error.message);
+    }
   };
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+        <h2 className="sm:mt-6 text-center text-xl sm:text-3xl font-extrabold text-gray-900">
           Sign in to your account
         </h2>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" onSubmit={signInWithEmail}>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Email address
@@ -32,6 +54,8 @@ const Login = () => {
                   id="email"
                   name="email"
                   type="email"
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)}
                   autoComplete="email"
                   required
                   className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#e63946] focus:border-[#e63946] sm:text-sm"
@@ -48,6 +72,8 @@ const Login = () => {
                   id="password"
                   name="password"
                   type={showPassword ? "text" : "password"}
+                  value={password}
+                  onChange={(e)=>setPassword(e.target.value)}
                   autoComplete="current-password"
                   required
                   className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#e63946] focus:border-[#e63946] sm:text-sm"
@@ -91,6 +117,13 @@ const Login = () => {
               </button>
             </div>
           </form>
+
+          {errorMessage && (
+                    <div className="text-red-500 mt-4 text-center text-sm">
+                      {errorMessage}
+                    </div>
+                  )}
+
           <div className='flex items-center w-full justify-center gap-2 pt-3'>
             <p>Don't have an account? </p> <Link to="/signup" className='font-semibold text-[#e63946]'>Sign Up</Link>
           </div>

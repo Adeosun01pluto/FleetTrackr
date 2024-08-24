@@ -16,9 +16,9 @@ const ContactInfo = ({ icon, title, content }) => (
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-100 py-0 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12">Contact Us</h1>
+        <h1 className="text-3xl text-[#e63946] md:text-4xl mb-6 sm:mb-12 font-bold text-center">Contact Us</h1>
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>

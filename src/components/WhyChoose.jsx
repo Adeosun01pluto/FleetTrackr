@@ -3,6 +3,7 @@ import { FaShieldAlt } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 import { FaUserCheck } from "react-icons/fa6";
 import { FaTruck } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
@@ -41,7 +42,7 @@ const WhyChoose = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12">Why Choose Us</h1>
+        <h1 className="text-3xl text-[#e63946] md:text-4xl mb-6 sm:mb-12 font-bold text-center">Why Choose Us</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((reason, index) => (
             <ReasonCard key={index} {...reason} />
@@ -51,9 +52,9 @@ const WhyChoose = () => {
           <p className="text-xl text-gray-700 mb-8">
             Experience the difference with our premier vehicle management services.
           </p>
-          <button className="bg-[#e63946] text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-[#e63946]/90 transition-colors">
+          <Link to="/schedule" className="bg-[#e63946] text-white py-3 px-8 rounded-full text-sm sm:text-lg font-semibold hover:bg-[#e63946]/90 transition-colors">
             Get Started Today
-          </button>
+          </Link>
         </div>
       </div>
     </div>

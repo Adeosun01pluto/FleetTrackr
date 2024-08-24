@@ -16,21 +16,21 @@ const Hero = () => {
             <Swiper pagination={{clickable: true}} modules={[Pagination]} className="mySwiper py-12">
              <SwiperSlide className='w-64 h-full flex items-center bg-white'>
                 <div className='flex flex-col gap-8'>
-                  <h2 className='text-6xl font-bold text-[#e63946]'>Car Rent For you</h2>
-                  <p className='md:w-[90%] text-lg text-black/90'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam corporis assumenda libero quis a!</p>
-                  <div className='flex gap-4 items-center justify-center'>
-                    <button className='border-2 border-[#e63946] bg-white font-semibold py-2 text-sm sm:text-md sm:py-3 px-8 text-[#e63946]'>Read More </button>
-                    <button className='text-white font-semibold py-2 text-sm sm:text-md sm:py-3 px-8 bg-[#e63946]'>Contact Us</button>
+                  <h2 className='text-3xl md:text-6xl font-semibold text-[#e63946]'>Optimize Your Vehicle Operations</h2>
+                  <p className='md:w-[90%] text-lg text-black/90'>Streamline your fleet management with advanced tools and real-time insights.</p>
+                  <div className='flex gap-4 items-center md:justify-center'>
+                    <button className='border-2 border-[#e63946] bg-white font-semibold py-2 text-sm sm:text-md sm:py-3 px-4 md:px-8 text-[#e63946]'>Read More </button>
+                    <button className='text-white font-semibold py-2 text-sm sm:text-md sm:py-3 px-4 md:px-8 bg-[#e63946]'>Contact Us</button>
                   </div>
                 </div>
              </SwiperSlide>
              <SwiperSlide className='w-64 h-full flex items-center bg-white'>
                 <div className='flex flex-col gap-8'>
-                  <h2 className='text-6xl font-bold text-[#e63946]'>Car Rent For you</h2>
-                  <p className='md:w-[90%] text-lg text-black/90'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam corporis assumenda libero quis a!</p>
-                  <div className='flex gap-4'>
-                    <button className='border-2 border-[#e63946] bg-white font-semibold py-3 px-8 text-[#e63946]'>Read More </button>
-                    <button className='text-white font-semibold py-3 px-8 bg-[#e63946]'>Contact Us</button>
+                  <h2 className='text-3xl md:text-6xl font-semibold text-[#e63946]'>Your Vehicles, Our Priority</h2>
+                  <p className='md:w-[90%] text-lg text-black/90'>Experience seamless vehicle management designed to keep you on the road.</p>
+                  <div className='flex gap-4 items-center md:justify-center'>
+                    <button className='border-2 border-[#e63946] bg-white font-semibold py-2 text-sm sm:text-md sm:py-3 px-4 md:px-8 text-[#e63946]'>Read More </button>
+                    <button className='text-white font-semibold py-2 text-sm sm:text-md sm:py-3 px-4 md:px-8 bg-[#e63946]'>Contact Us</button>
                   </div>
                 </div>
              </SwiperSlide>
